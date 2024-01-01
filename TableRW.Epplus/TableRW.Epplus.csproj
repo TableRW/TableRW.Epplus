@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;</TargetFrameworks>
+		<LangVersion>preview</LangVersion>
+		<Nullable>enable</Nullable>
+		<AssemblyName>TableRW.Epplus</AssemblyName>
+		<AssemblyVersion>0.6.0</AssemblyVersion>
+		<PackageVersion>0.6.0</PackageVersion>
+		<Authors>Vst.h</Authors>
+		<PackageId>TableRW.Epplus</PackageId>
+		<PackageTags>Excel, Epplus, Import, Export, Read, Write, Expression</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageProjectUrl>https://github.com/TableRW/TableRW.Epplus</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/TableRW/TableRW.Epplus</RepositoryUrl>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<Description>Read and write data to Excel, using expression trees to generate delegates (Lambda) </Description>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="TableRW" Version="0.6.0" />
+		<PackageReference Include="EPPlus" Version="5.0.0-beta" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="../LICENSE" Pack="true" PackagePath="" />
+		<None Include="../README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
+</Project>
