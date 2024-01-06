@@ -21,7 +21,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="TableRW" Version="0.6.0" />
-		<PackageReference Include="EPPlus" Version="5.0.0-beta" />
+		<PackageReference Include="EPPlus" Version="5.0.3" />
 	</ItemGroup>
 
 	<ItemGroup>
