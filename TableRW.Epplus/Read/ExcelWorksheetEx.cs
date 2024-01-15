@@ -12,7 +12,7 @@ public static class ExcelWorksheetEx {
         if (sheet == null) { throw new ArgumentNullException(nameof(sheet)); }
         if (sheet.Dimension == null) { throw new ArgumentNullException("sheet.Dimension == null"); }
 
-        if (CacheReadFn<TEntity>.FnUseHeader is var fn && fn != null) {
+        if (CacheReadFn<TEntity>.FnUseHeader is {} fn) {
             return fn(sheet);
         }
 

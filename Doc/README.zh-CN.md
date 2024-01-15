@@ -102,7 +102,7 @@ using TableRW.Read.Epplus;
 
 void Example(ExcelWorksheet sheet) {
     // 使用 ExcelWorksheet 的列名作为属性映射，列名和属性名必须相同
-    var list1 = sheet.ReadToList<Entity>(); // List<Entity>
+    var list1 = sheet.ReadToList<Entity>(headerRow: 1); // List<Entity>
 
     var list2 = sheet.ReadToList<Entity>(cacheKey: 0, reader => {
         // 自己处理属性和列的映射

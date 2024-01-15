@@ -100,7 +100,7 @@ using TableRW.Read.Epplus;
 void Example(ExcelWorksheet sheet) {
     // Use the column name of the ExcelWorksheet as the property mapping.
     // The column name and property name must be the same.
-    var list1 = sheet.ReadToList<Entity>(); // List<Entity>
+    var list1 = sheet.ReadToList<Entity>(headerRow: 1); // List<Entity>
 
     var list2 = sheet.ReadToList<Entity>(cacheKey: 0, reader => {
         // Handle the mapping of properties and columns yourself
